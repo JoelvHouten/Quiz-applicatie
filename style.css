@@ -4,47 +4,55 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+body{
+    background: url("images/background.jpg");
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 
-.btn-start {
-  align-items: center;
-  appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #5d7ca0 0, #44586f 100%);
-  border: 0;
-  border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
+h1{
+    font-size: 3.5rem;
 }
 
-.btn-start:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #5d7ca0 0 -3px 0 inset;
-  transform: translateY(-2px);
+.text-shadow {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-.btn-start:active {
-  box-shadow: #5d7ca0 0 3px 7px inset;
-  transform: translateY(2px);
+.color-gray{
+    background-color: #c9c9c9;
+}
+
+.rounded-25{
+    border-radius: 25px;
+}
+
+.rounded-bottom-25{
+    border-radius: 0 0 25px 25px;
+}
+
+.window-color{
+    background-image: radial-gradient(100% 100% at 100% 0, #3c4e81 0, #2a375a 100%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btn-color{
+    background: linear-gradient(270deg, rgb(120, 51, 130), rgb(79, 58, 204));
+    background-size: 100%;
+    transition: background-size 0.5s ease-in-out;
+    border-radius: 0 0 25px 25px;
+    border: none;
+    cursor: pointer;
+    border-top: 1px solid #273255c0;
+    box-shadow: 0px -7px 8px -5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px -7px 8px -5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px -7px 8px -5px rgba(0,0,0,0.1);
+}
+
+.btn-color:hover{
+    background-size: 300%;
+}
+
+.btn{
+    width: 100% !important;
+    border: none;
 }
