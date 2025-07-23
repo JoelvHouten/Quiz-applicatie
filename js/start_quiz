@@ -1,0 +1,8 @@
+const welkom = document.getElementById("welkom");
+const quiz = document.getElementById("quiz");
+const startButton = document.getElementById("btn-start");
+
+startButton.addEventListener("click", function(){
+    welkom.style.display = "none";
+    quiz.style.display = "block";
+})
