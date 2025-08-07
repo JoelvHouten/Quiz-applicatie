@@ -1,7 +1,7 @@
 // Startscherm verbergen en quiz tonen
 document.getElementById("start").addEventListener("click", () => {
-    document.getElementById("welkom").style.display = "none";
-    document.getElementById("resultaat").style.display = "none";
+    document.getElementById("welcome").style.display = "none";
+    document.getElementById("results").style.display = "none";
     document.getElementById("quiz").style.display = "block";
 });
 
@@ -119,8 +119,8 @@ nextButton.addEventListener('click', () => {
         showQuestion();
     } else {
         document.getElementById("quiz").style.display = "none";
-        document.getElementById("resultaat").style.display = "block";
-        document.getElementById("quiz-resultaat").innerText = `Je hebt ${score}/20 vragen goed beantwoord`;
+        document.getElementById("results").style.display = "block";
+        document.getElementById("quiz-results").innerText = `Je hebt ${score}/20 vragen goed beantwoord`;
 
         // Informatieve tekst gebasseerd op het aantal juiste antwoorden en boven de 17 confetti
         let resultaatTekst = "";
@@ -138,7 +138,7 @@ nextButton.addEventListener('click', () => {
             resultaatTekst = "Zet die PC maar op marktplaats. Dit wordt niks! 😅";
         }
 
-        document.getElementById("quiz-resultaat-info").textContent = resultaatTekst;
+        document.getElementById("quiz-results-info").textContent = resultaatTekst;
 
         // Reset de quiz
         resetButton.addEventListener('click', () => {
