@@ -44,9 +44,10 @@ function showQuestion(){
     // Legen van de keuzes en het deactiveren van de volgende knop
     choicesEl.innerHTML = '';
     nextButton.classList.add('inactive');
-    nextButton.querySelector('button').classList.add('inactive');
     nextButton.classList.remove('btn-color');
-
+    nextButton.querySelector('button').classList.add('inactive');
+    nextButton.querySelector('button').classList.remove('text-white');
+    
     // De antwoord elementen creeren en de juiste classes toewijzen aan de elementen en een event listener toevoegen voor styling en antwoord selectie
     question.choices.forEach(choice => {
         const btn = document.createElement('button');
@@ -93,8 +94,8 @@ function selectAnswer(choice) {
      }
 
     nextButton.classList.remove('inactive', 'disable');
-    nextButton.querySelector('button').classList.remove('inactive');
     nextButton.classList.add('btn-color');
+    nextButton.querySelector('button').classList.remove('inactive');
     nextButton.querySelector('button').classList.add('text-white');
 
     document.querySelectorAll('.custom-option').forEach(btn => {
@@ -119,6 +120,26 @@ nextButton.addEventListener('click', () => {
     } else {
         document.getElementById("quiz").style.display = "none";
         document.getElementById("resultaat").style.display = "block";
+        document.getElementById("quiz-resultaat").innerText = `Je hebt ${score}/20 vragen goed beantwoord`;
+
+        // Informatieve tekst gebasseerd op het aantal juiste antwoorden en boven de 17 confetti
+        let resultaatTekst = "";
+
+        if (score > 17) {
+            resultaatTekst = "Fantastisch! Je bent een echte JavaScript ninja! 🎉🚀";
+            startConfetti();
+        } else if (score > 15) {
+            resultaatTekst = "Top gedaan! Je kent de JS-basis als geen ander!";
+        } else if (score > 10) {
+            resultaatTekst = "Niet slecht! Tijd om je console.log wat vaker te gebruiken!";
+        } else if (score > 5) {
+            resultaatTekst = "Je bent op de goede weg, maar vergeet niet de semicolons! 😉";
+        } else {
+            resultaatTekst = "Zet die PC maar op marktplaats. Dit wordt niks! 😅";
+        }
+
+        document.getElementById("quiz-resultaat-info").textContent = resultaatTekst;
+
         // Reset de quiz
         resetButton.addEventListener('click', () => {
             resetQuiz();
