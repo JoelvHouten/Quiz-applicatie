@@ -32,3 +32,55 @@ fetch('json/quiz_vragen.json')
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }
+
+// Functie voor het tonen van de vraag en antwoorden en het kiezen van het antwoord
+function showQuestion(){
+    // Laad een vraag uit de array en toon deze in het juiste element
+    const question = questions[currentQuestion];
+    questionEl.textContent = question.question;
+
+    // Legen van de keuzes en het deactiveren van de volgende knop
+    choicesEl.innerHTML = '';
+    nextButton.classList.add('inactive');
+    nextButton.querySelector('button').classList.add('inactive');
+    nextButton.classList.remove('btn-color');
+
+    // De antwoord elementen creeren en de juiste classes toewijzen aan de elementen en een event listener toevoegen voor styling en antwoord selectie
+    question.choices.forEach(choice => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'list-group-item list-group-item-action d-flex justify-content-between align-items-center custom-option text-start';
+
+        const span = document.createElement('span');
+        span.textContent = choice;
+
+        const icon = document.createElement('i');
+        icon.className = 'bi bi-check-circle';
+
+        btn.appendChild(span);
+        btn.appendChild(icon);
+
+        btn.addEventListener('click', function () {
+            document.querySelectorAll('.custom-option').forEach(b => {
+                b.classList.remove('active');
+                const i = b.querySelector('i');
+                if (i) {
+                    i.classList.remove('bi-check-circle-fill');
+                    i.classList.add('bi-check-circle');
+                }
+            });
+
+            this.classList.add('active');
+            icon.classList.remove('bi-check-circle');
+            icon.classList.add('bi-check-circle-fill');
+
+            selectAnswer(choice);
+        });
+
+        choicesEl.appendChild(btn);
+    });
+}
+
+function selectAnswer(choice) {
+
+}
