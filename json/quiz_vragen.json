@@ -2,19 +2,19 @@
     {
         "question": "Wat is de output van 'typeof NaN'?",
         "choices": [
+            "object",
             "number",
             "NaN",
-            "undefined",
-            "object"
+            "undefined"
         ],
         "answer": "number"
     },
     {
         "question": "Hoe maak je een array in JavaScript?",
         "choices": [
+            "let arr = ()",
             "let arr = []",
             "let arr = {}",
-            "let arr = ()",
             "let arr = <>"
         ],
         "answer": "let arr = []"
@@ -22,19 +22,19 @@
     {
         "question": "Wat doet '===’ in JavaScript?",
         "choices": [
-            "Vergelijkt alleen waarden",
-            "Vergelijkt waarden en types",
             "Is een toewijzing",
-            "Vergelijkt arrays"
+            "Vergelijkt waarden en types",
+            "Vergelijkt arrays",
+            "Vergelijkt alleen waarden"
         ],
         "answer": "Vergelijkt waarden en types"
     },
     {
         "question": "Hoe declareer je een variabele die je later niet mag veranderen?",
         "choices": [
-            "let",
-            "var",
             "const",
+            "var",
+            "let",
             "define"
         ],
         "answer": "const"
@@ -42,8 +42,8 @@
     {
         "question": "Welke methode verandert een string in hoofdletters?",
         "choices": [
-            "toUpperCase()",
             "capitalize()",
+            "toUpperCase()",
             "toCap()",
             "upperCase()"
         ],
@@ -52,19 +52,19 @@
     {
         "question": "Welke methode gebruik je om te herhalen over een array?",
         "choices": [
-            "forEach()",
             "repeat()",
-            "loop()",
-            "mapEach()"
+            "forEach()",
+            "mapEach()",
+            "loop()"
         ],
         "answer": "forEach()"
     },
     {
         "question": "Wat is de juiste manier om een object te maken?",
         "choices": [
-            "let obj = {}",
-            "let obj = []",
             "let obj = ()",
+            "let obj = []",
+            "let obj = {}",
             "let obj = <>"
         ],
         "answer": "let obj = {}"
@@ -72,79 +72,79 @@
     {
         "question": "Hoe controleer je of een waarde gelijk is aan null?",
         "choices": [
-            "value == null",
-            "value = null",
             "value === undefined",
-            "value =! null"
+            "value == null",
+            "value =! null",
+            "value = null"
         ],
         "answer": "value == null"
     },
     {
         "question": "Welke functie gebruik je om JSON om te zetten in een object?",
         "choices": [
-            "JSON.parse()",
-            "JSON.objectify()",
+            "JSON.stringify()",
             "JSON.decode()",
-            "JSON.stringify()"
+            "JSON.objectify()",
+            "JSON.parse()"
         ],
         "answer": "JSON.parse()"
     },
     {
         "question": "Wat retourneert een functie zonder return statement?",
         "choices": [
-            "null",
             "undefined",
+            "false",
             "0",
-            "false"
+            "null"
         ],
         "answer": "undefined"
     },
     {
         "question": "Hoe voeg je een element toe aan het einde van een array?",
         "choices": [
-            "push()",
             "append()",
-            "add()",
-            "insert()"
+            "insert()",
+            "push()",
+            "add()"
         ],
         "answer": "push()"
     },
     {
         "question": "Welke methode maakt van een array een string?",
         "choices": [
-            "join()",
             "split()",
-            "merge()",
-            "combine()"
+            "join()",
+            "combine()",
+            "merge()"
         ],
         "answer": "join()"
     },
     {
         "question": "Wat is het globale object in de browseromgeving?",
         "choices": [
-            "window",
             "global",
+            "document",
             "this",
-            "document"
+            "window"
         ],
         "answer": "window"
     },
     {
         "question": "Wat betekent 'undefined' in JavaScript?",
         "choices": [
-            "Een niet-gedefinieerde waarde",
             "Een foutmelding",
+            "Een lege array",
             "Een string",
-            "Een lege array"
+            "Een niet-gedefinieerde waarde"
         ],
         "answer": "Een niet-gedefinieerde waarde"
     },
     {
         "question": "Welke methode kopieert alle eigenschappen van objecten naar één object?",
         "choices": [
+            "Object.clone()",
             "Object.assign()",
             "Object.copy()",
-            "Object.clone()",
             "Object.merge()"
         ],
         "answer": "Object.assign()"
@@ -153,8 +153,8 @@
         "question": "Wat is een callback-functie?",
         "choices": [
             "Een functie die als argument wordt doorgegeven",
-            "Een anonieme functie",
             "Een foutfunctie",
+            "Een anonieme functie",
             "Een method uit jQuery"
         ],
         "answer": "Een functie die als argument wordt doorgegeven"
@@ -162,10 +162,10 @@
     {
         "question": "Wat doet setTimeout()?",
         "choices": [
-            "Stelt een functie uit",
+            "Start een functie onmiddellijk",
             "Herhaalt een functie",
             "Stop een functie",
-            "Start een functie onmiddellijk"
+            "Stelt een functie uit"
         ],
         "answer": "Stelt een functie uit"
     },
@@ -173,8 +173,8 @@
         "question": "Wat is een closure in JavaScript?",
         "choices": [
             "Een functie met toegang tot zijn outer scope",
-            "Een object dat een functie sluit",
             "Een callback functie",
+            "Een object dat een functie sluit",
             "Een error handler"
         ],
         "answer": "Een functie met toegang tot zijn outer scope"
@@ -192,10 +192,10 @@
     {
         "question": "Wat doet de 'map()' methode op arrays?",
         "choices": [
-            "Maakt een nieuwe array op basis van een functie",
-            "Filtert de array",
             "Voegt elementen samen",
-            "Verwijdert elementen"
+            "Maakt een nieuwe array op basis van een functie",
+            "Verwijdert elementen",
+            "Filtert de array"
         ],
         "answer": "Maakt een nieuwe array op basis van een functie"
     }
