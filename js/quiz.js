@@ -81,6 +81,30 @@ function showQuestion(){
     });
 }
 
+// Functie voor de controle van het geselecteerde antwoord en styling van het juiste en fout gekozen antwoord
 function selectAnswer(choice) {
 
+     const current = questions[currentQuestion];
+
+     if (choice === current.answer){
+        score ++;
+     }
+
+    nextButton.classList.remove('inactive', 'disable');
+    nextButton.querySelector('button').classList.remove('inactive');
+    nextButton.classList.add('btn-color');
+    nextButton.querySelector('button').classList.add('text-white');
+
+    document.querySelectorAll('.custom-option').forEach(btn => {
+
+        const text = btn.querySelector('span').textContent;
+
+        if (text === current.answer) {
+            btn.classList.add('bg-success', 'text-white');
+        } else if (text === choice) {
+            btn.classList.add('bg-danger', 'text-white');
+        }
+
+        btn.classList.add('disable');
+    });
 }
