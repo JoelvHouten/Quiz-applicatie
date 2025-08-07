@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>Quiz applicatie</title>
+	<title>Javascript Quiz</title>
 
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
@@ -21,13 +21,14 @@
 	<section id="welkom">
 		<div class="container vh-100 d-flex justify-content-center align-items-center">
 			<div class="row rounded-25 window-color mx-2">
-				<div class="col-md-3 text-white text-center py-5 w-100">
+				<div class="col-12 col-md-10 text-white text-center py-5 mx-auto">
 					<h1 class="text-shadow pb-3 fw-bold">Javascript Quiz</h1>
 					<p class="text-shadow fs-3 pb-4">
 						Een Quiz met verschillende vragen over javascript.
 					</p>
+					<p id="json-error" class="text-danger fs-5"></p>
 				</div>
-				<div class="col-md-3 text-center py-3 w-100 btn-color rounded-bottom-25">
+				<div class="col-12 col-md-6 text-center py-3 w-100 btn-color rounded-bottom-25">
 					<button type="button" id="btn-start" class="btn text-white fw-bold fs-3 text-shadow">Start Quiz</button>
 				</div>
 			</div>
@@ -36,19 +37,23 @@
 
 	<section id="quiz">
 		<div class="container vh-100 d-flex justify-content-center align-items-center">
-			<div class="row rounded-25 window-color mx-2">
-				<div class="col-md-3 text-white text-center py-5 w-100">
+			<div class="row rounded-25 window-color mx-2 w-75">
+				<div class="col-12 col-md-8 text-white text-center py-5 mx-auto">
+					<h2 class="mb-4" id="question"></h2>
+					<div class="list-group" id="choices">
 
+					</div>
 				</div>
-				<div class="col-md-3 text-center py-3 w-100 btn-color rounded-bottom-25">
-					<button type="button" class="btn text-white fw-bold fs-3 text-shadow">Start Quiz</button>
+				<div class="col-12 col-md-6 text-center py-3 w-100 btn-color rounded-bottom-25" id="next">
+					<button type="button" class="btn fw-bold fs-3">Volgende</button>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="js/start_quiz"></script>
+	<script src="js/quiz.js"></script>
 </body>
 
 </html>

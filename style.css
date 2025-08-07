@@ -6,12 +6,13 @@
 
 body{
     background: url("images/background.jpg");
+    background-color: #19213a;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
 }
 
 #quiz{
-  display: none;
+    display: none;
 }
 
 h1{
@@ -40,7 +41,7 @@ h1{
 }
 
 .btn-color{
-    background: linear-gradient(270deg, rgb(120, 51, 130), rgb(79, 58, 204));
+    background: linear-gradient(270deg, rgb(175, 42, 196), rgb(79, 58, 204));
     background-size: 100%;
     transition: background-size 0.5s ease-in-out;
     border-radius: 0 0 25px 25px;
@@ -52,6 +53,10 @@ h1{
     -moz-box-shadow: 0px -7px 8px -5px rgba(0,0,0,0.1);
 }
 
+.inactive{
+    background-color: #1e2b4a !important;
+}
+
 .btn-color:hover{
     background-size: 300%;
 }
@@ -59,4 +64,33 @@ h1{
 .btn{
     width: 100% !important;
     border: none;
+}
+
+.custom-option{
+    background-color: #1e2b4a;
+    color: #fff !important;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem 1.25rem;
+    font-size: 1.1rem;
+    transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-option:hover{
+    background-color: #4f3acc !important;
+    color: #fff !important;
+}
+
+.check-icon{
+    width: 1.4rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.disable{
+    pointer-events: none;
 }
