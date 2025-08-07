@@ -9,12 +9,16 @@ document.getElementById("start").addEventListener("click", () => {
 let questions = [];
 let currentQuestion = 0;
 let score = 0;
+let currentQuestionNumber = 0;
 
 const jsonLoadFailed = document.getElementById('json-error');
 const questionEl = document.getElementById('question');
 const choicesEl = document.getElementById('choices');
 const nextButton = document.getElementById('next');
 const resetButton = document.getElementById('reset');
+const currentQuestionText = document.getElementById('current-question-number');
+const goodAnwsersText = document.getElementById('correct-answers');
+
 
 // Quizvragen laden uit externe JSON
 fetch('json/quiz_vragen.json')
@@ -42,6 +46,10 @@ function showQuestion(){
     questionEl.textContent = question.question;
 
     // Legen van de keuzes en het deactiveren van de volgende knop
+
+    currentQuestionNumber ++;
+    currentQuestionText.innerText = currentQuestionNumber;
+    goodAnwsersText.innerText = score;
     choicesEl.innerHTML = '';
     nextButton.classList.add('inactive');
     nextButton.classList.remove('btn-color');
