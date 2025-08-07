@@ -55,6 +55,8 @@ h1{
 
 .inactive{
     background-color: #1e2b4a !important;
+    color: #32426c;
+    pointer-events: none;
 }
 
 .btn-color:hover{

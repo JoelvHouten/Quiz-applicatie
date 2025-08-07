@@ -32,3 +32,16 @@ fetch('json/quiz_vragen.json')
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }
+
+// Functie voor het tonen van de vraag en antwoorden en het kiezen van het antwoord
+function showQuestion(){
+    // Laad een vraag uit de array en toon deze in het juiste element
+    const question = questions[currentQuestion];
+    questionEl.textContent = question.question;
+
+    // Legen van de keuzes en het deactiveren van de volgende knop
+    choicesEl.innerHTML = '';
+    nextButton.classList.add('inactive');
+    nextButton.querySelector('button').classList.add('inactive');
+    nextButton.classList.remove('btn-color');
+}
