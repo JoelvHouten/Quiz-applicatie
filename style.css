@@ -15,6 +15,10 @@ body{
     display: none;
 }
 
+#resultaat{
+    display: none;
+}
+
 h1{
     font-size: 3.5rem;
 }

@@ -1,6 +1,7 @@
 // Startscherm verbergen en quiz tonen
-document.getElementById("btn-start").addEventListener("click", () => {
+document.getElementById("start").addEventListener("click", () => {
     document.getElementById("welkom").style.display = "none";
+    document.getElementById("resultaat").style.display = "none";
     document.getElementById("quiz").style.display = "block";
 });
 
@@ -13,6 +14,7 @@ const jsonLoadFailed = document.getElementById('json-error');
 const questionEl = document.getElementById('question');
 const choicesEl = document.getElementById('choices');
 const nextButton = document.getElementById('next');
+const resetButton = document.getElementById('reset');
 
 // Quizvragen laden uit externe JSON
 fetch('json/quiz_vragen.json')
@@ -107,4 +109,23 @@ function selectAnswer(choice) {
 
         btn.classList.add('disable');
     });
+}
+
+// Volgende vraag en bijhouden of alle vragen zijn beantwoord en laat de score zien wanneer alle vragen zijn beantwoord
+nextButton.addEventListener('click', () => {
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+        showQuestion();
+    } else {
+        document.getElementById("quiz").style.display = "none";
+        document.getElementById("resultaat").style.display = "block";
+        // Reset de quiz
+        resetButton.addEventListener('click', () => {
+            resetQuiz();
+        });
+    }
+});
+
+function resetQuiz(){
+    location.reload();
 }
