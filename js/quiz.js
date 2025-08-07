@@ -129,11 +129,11 @@ nextButton.addEventListener('click', () => {
             resultaatTekst = "Fantastisch! Je bent een echte JavaScript ninja! 🎉🚀";
             startConfetti();
         } else if (score > 15) {
-            resultaatTekst = "Top gedaan! Je kent de JS-basis als geen ander!";
+            resultaatTekst = "Je JavaScript is bijna zo vloeiend als je koffie-inname.";
         } else if (score > 10) {
             resultaatTekst = "Niet slecht! Tijd om je console.log wat vaker te gebruiken!";
         } else if (score > 5) {
-            resultaatTekst = "Je bent op de goede weg, maar vergeet niet de semicolons! 😉";
+            resultaatTekst = "Arrays en objecten zijn niet eng meer, maar nog geen beste vrienden. 😉";
         } else {
             resultaatTekst = "Zet die PC maar op marktplaats. Dit wordt niks! 😅";
         }
