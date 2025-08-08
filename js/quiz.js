@@ -1,12 +1,19 @@
 // Startscherm verbergen en quiz tonen
 document.getElementById("start").addEventListener("click", () => {
+    const dropdown = document.getElementById("question-select");
+    questionAmount = parseInt(dropdown.value, 10);
+
     document.getElementById("welcome").style.display = "none";
     document.getElementById("results").style.display = "none";
     document.getElementById("quiz").style.display = "block";
+
+    questions = questions.slice(0, questionAmount); 
+    showQuestion();
 });
 
 // Quiz variabelen elementen toewijzen en laden van vragen (random)
 let questions = [];
+let questionAmount = 20;
 let currentQuestion = 0;
 let score = 0;
 let currentQuestionNumber = 0;
@@ -19,14 +26,12 @@ const resetButton = document.getElementById('reset');
 const currentQuestionText = document.getElementById('current-question-number');
 const goodAnwsersText = document.getElementById('correct-answers');
 
-
 // Quizvragen laden uit externe JSON
 fetch('json/quiz_vragen.json')
     .then (response => response.json())
     .then (data => {
         // Willekeurig laden van vragen en als alles goed gaat de eerste vraag laten zien
         questions = shuffleArray(data);
-        showQuestion();
     })
     .catch(error => {
         // Wanneer het laden van het JSON bestand mislukt een foutmelding laten zien
@@ -46,11 +51,11 @@ function showQuestion(){
     questionEl.textContent = question.question;
 
     // Legen van de keuzes en het deactiveren van de volgende knop
-
     currentQuestionNumber ++;
-    currentQuestionText.innerText = currentQuestionNumber;
+    currentQuestionText.innerText = `Vraag ${currentQuestionNumber} / ${questionAmount}`;
     goodAnwsersText.innerText = score;
     choicesEl.innerHTML = '';
+
     nextButton.classList.add('inactive');
     nextButton.classList.remove('btn-color');
     nextButton.querySelector('button').classList.add('inactive');
@@ -123,24 +128,24 @@ function selectAnswer(choice) {
 // Volgende vraag en bijhouden of alle vragen zijn beantwoord en laat de score zien wanneer alle vragen zijn beantwoord
 nextButton.addEventListener('click', () => {
     currentQuestion++;
-    if (currentQuestion < questions.length) {
+    if (currentQuestion < questionAmount) {
         showQuestion();
     } else {
         document.getElementById("quiz").style.display = "none";
         document.getElementById("results").style.display = "block";
-        document.getElementById("quiz-results").innerText = `Je hebt ${score}/20 vragen goed beantwoord`;
+        document.getElementById("quiz-results").innerText = `Je hebt ${score}/${questionAmount} vragen goed beantwoord`;
 
         // Informatieve tekst gebasseerd op het aantal juiste antwoorden en boven de 17 confetti
         let resultaatTekst = "";
 
-        if (score > 17) {
+        if (score > questionAmount / 1.15) {
             resultaatTekst = "Fantastisch! Je bent een echte JavaScript ninja! 🎉🚀";
             startConfetti();
-        } else if (score > 15) {
-            resultaatTekst = "Je JavaScript is bijna zo vloeiend als je koffie-inname.";
-        } else if (score > 10) {
-            resultaatTekst = "Niet slecht! Tijd om je console.log wat vaker te gebruiken!";
-        } else if (score > 5) {
+        } else if (score > questionAmount / 1.5) {
+            resultaatTekst = "Je JavaScript is bijna zo vloeiend als je koffie-inname. ☕";
+        } else if (score > questionAmount / 2.5) {
+            resultaatTekst = "Niet slecht! Tijd om je console.log wat vaker te gebruiken! 📃";
+        } else if (score > questionAmount / 5) {
             resultaatTekst = "Arrays en objecten zijn niet eng meer, maar nog geen beste vrienden. 😉";
         } else {
             resultaatTekst = "Zet die PC maar op marktplaats. Dit wordt niks! 😅";

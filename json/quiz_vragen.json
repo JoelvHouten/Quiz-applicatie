@@ -198,5 +198,255 @@
             "Filtert de array"
         ],
         "answer": "Maakt een nieuwe array op basis van een functie"
+    },
+    {
+        "question": "Wat is het resultaat van '2' + 2 in JavaScript?",
+        "choices": [
+            "4",
+            "NaN",
+            "'22'",
+            "'4'"
+        ],
+        "answer": "'22'"
+    },
+    {
+        "question": "Welke keyword gebruik je om een fout af te vangen?",
+        "choices": [
+            "try",
+            "catch",
+            "throw",
+            "alle bovenstaande"
+        ],
+        "answer": "alle bovenstaande"
+    },
+    {
+        "question": "Hoe maak je een commentaar op één regel?",
+        "choices": [
+            "// comment",
+            "/* comment */",
+            "# comment",
+            "<!-- comment -->"
+        ],
+        "answer": "// comment"
+    },
+    {
+        "question": "Welke operator gebruik je voor modulus (rest bij deling)?",
+        "choices": [
+            "%",
+            "/",
+            "*",
+            "**"
+        ],
+        "answer": "%"
+    },
+    {
+        "question": "Wat doet 'isNaN()'?",
+        "choices": [
+            "Checkt op null",
+            "Checkt of iets een nummer is",
+            "Checkt of iets geen nummer is",
+            "Checkt op undefined"
+        ],
+        "answer": "Checkt of iets geen nummer is"
+    },
+    {
+        "question": "Wat is het resultaat van typeof null?",
+        "choices": [
+            "null",
+            "object",
+            "undefined",
+            "NaN"
+        ],
+        "answer": "object"
+    },
+    {
+        "question": "Hoe schrijf je een class in JavaScript?",
+        "choices": [
+            "function MyClass{}",
+            "class MyClass {}",
+            "create class MyClass{}",
+            "define MyClass{}"
+        ],
+        "answer": "class MyClass {}"
+    },
+    {
+        "question": "Wat is een promise?",
+        "choices": [
+            "Een type array",
+            "Een object voor async operaties",
+            "Een type functie",
+            "Een event handler"
+        ],
+        "answer": "Een object voor async operaties"
+    },
+    {
+        "question": "Wat doet 'Array.isArray()'?",
+        "choices": [
+            "Maakt een array",
+            "Verwijdert een array",
+            "Controleert of iets een array is",
+            "Splitst een array"
+        ],
+        "answer": "Controleert of iets een array is"
+    },
+    {
+        "question": "Wat retourneert Math.floor(4.7)?",
+        "choices": [
+            "4",
+            "5",
+            "4.7",
+            "4.5"
+        ],
+        "answer": "4"
+    },
+    {
+        "question": "Hoe maak je een template literal?",
+        "choices": [
+            "\"Hallo ${naam}\"",
+            "'Hallo ${naam}'",
+            "`Hallo ${naam}`",
+            "(Hallo ${naam})"
+        ],
+        "answer": "`Hallo ${naam}`"
+    },
+    {
+        "question": "Wat doet 'event.preventDefault()'?",
+        "choices": [
+            "Stopt het event volledig",
+            "Voorkomt standaardgedrag",
+            "Verwijdert een event",
+            "Start een nieuw event"
+        ],
+        "answer": "Voorkomt standaardgedrag"
+    },
+    {
+        "question": "Hoe selecteer je een element met id 'app' in de DOM?",
+        "choices": [
+            "document.getElement('app')",
+            "document.querySelector('#app')",
+            "document.id('app')",
+            "get.app()"
+        ],
+        "answer": "document.querySelector('#app')"
+    },
+    {
+        "question": "Wat is het verschil tussen '==' en '==='?",
+        "choices": [
+            "Geen verschil",
+            "=== controleert types ook",
+            "== is strikter",
+            "== controleert types ook"
+        ],
+        "answer": "=== controleert types ook"
+    },
+    {
+        "question": "Wat doet 'localStorage.setItem()'?",
+        "choices": [
+            "Slaat data tijdelijk op",
+            "Slaat data op in bestand",
+            "Slaat data op in browser",
+            "Stuurt data naar server"
+        ],
+        "answer": "Slaat data op in browser"
+    },
+    {
+        "question": "Welke methode gebruik je om een string te splitsen?",
+        "choices": [
+            "split()",
+            "slice()",
+            "join()",
+            "cut()"
+        ],
+        "answer": "split()"
+    },
+    {
+        "question": "Wat doet 'Array.filter()'?",
+        "choices": [
+            "Maakt een kopie van een array",
+            "Filtert elementen volgens een conditie",
+            "Voegt elementen samen",
+            "Zoekt een element"
+        ],
+        "answer": "Filtert elementen volgens een conditie"
+    },
+    {
+        "question": "Welke keyword gebruik je om iets te exporteren?",
+        "choices": [
+            "export",
+            "module",
+            "send",
+            "expose"
+        ],
+        "answer": "export"
+    },
+    {
+        "question": "Wat is een voordeel van arrow functions?",
+        "choices": [
+            "Kortere syntax",
+            "Eigen 'this'-binding",
+            "Minder code",
+            "Alle bovenstaande"
+        ],
+        "answer": "Alle bovenstaande"
+    },
+    {
+        "question": "Wat doet 'console.error()'?",
+        "choices": [
+            "Logt foutmeldingen",
+            "Verwijdert fouten",
+            "Stop script",
+            "Geeft geen output"
+        ],
+        "answer": "Logt foutmeldingen"
+    },
+    {
+        "question": "Wat is destructuring?",
+        "choices": [
+            "Verwijderen van properties",
+            "Kopie maken van objecten",
+            "Uitpakken van waarden",
+            "Samenvoegen van arrays"
+        ],
+        "answer": "Uitpakken van waarden"
+    },
+    {
+        "question": "Wat doet 'Math.random()'?",
+        "choices": [
+            "Geeft een willekeurige string",
+            "Geeft een willekeurig getal tussen 0 en 1",
+            "Geeft een negatief getal",
+            "Geeft een integer"
+        ],
+        "answer": "Geeft een willekeurig getal tussen 0 en 1"
+    },
+    {
+        "question": "Wat doet 'typeof []'?",
+        "choices": [
+            "object",
+            "array",
+            "list",
+            "undefined"
+        ],
+        "answer": "object"
+    },
+    {
+        "question": "Wat is een event listener?",
+        "choices": [
+            "Een array van events",
+            "Een manier om op events te reageren",
+            "Een HTTP-request",
+            "Een functie die events voorkomt"
+        ],
+        "answer": "Een manier om op events te reageren"
+    },
+    {
+        "question": "Wat is het doel van 'use strict'?",
+        "choices": [
+            "Verplicht strikte syntax",
+            "Verbetert performance",
+            "Voorkomt fouten",
+            "Alle bovenstaande"
+        ],
+        "answer": "Alle bovenstaande"
     }
 ]

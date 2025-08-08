@@ -23,6 +23,10 @@ body{
     transform: translate(-50%, -50%);
 }
 
+.w-33{
+    width: 33%;
+}
+
 h1{
     font-size: 3.5rem;
 }
@@ -103,4 +107,17 @@ h1{
 
 .disable{
     pointer-events: none;
+}
+
+#question-select{
+    background-color: #3b4d80 !important;
+    border: 1px solid #3f5491 !important;
+    color: white !important;
+    border-radius: 0px;
+}
+
+#question-select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: inherit;
 }

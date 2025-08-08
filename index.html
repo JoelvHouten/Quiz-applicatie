@@ -27,6 +27,15 @@
 						Een Quiz met verschillende vragen over javascript.
 					</p>
 					<p id="json-error" class="text-danger fs-5"></p>
+					<div class="mb-3">
+						<label for="question-select" class="form-label text-shadow fs-5">Kies het aantal vragen</label>
+						<select id="question-select" class="form-select w-33 mx-auto">
+							<option value="10">10 vragen</option>
+							<option value="20" selected>20 vragen</option>
+							<option value="40">40 vragen</option>
+							<option value="50">50 vragen</option>
+						</select>
+					</div>
 				</div>
 				<div class="col-12 col-md-6 text-center py-3 w-100 btn-color rounded-bottom-25">
 					<button type="button" id="start" class="btn text-white fw-bold fs-3 text-shadow">Start Quiz</button>
@@ -39,11 +48,11 @@
 		<div class="container vh-100 d-flex justify-content-center align-items-center">
 			<div class="row rounded-25 window-color mx-2 w-100">
 				<div class="col-12 text-white px-4 pt-3 d-flex justify-content-between align-items-center">
-					<div id="question-counter" class="fs-5 text-warning">
-						Vraag <span id="current-question-number"></span>/20
+					<div id="question-counter" class="fs-5 text-warning fw-bold">
+						<span id="current-question-number"></span>
 					</div>
-					<div id="score-counter" class="fs-5 text-warning">
-						👍 <span id="correct-answers">0</span>
+					<div id="score-counter" class="fs-5 text-warning fw-bold">
+						🏆 <span id="correct-answers">0</span>
 					</div>
 				</div>
 				<div class="col-12 col-md-9 text-white text-center py-5 mx-auto">
@@ -53,7 +62,6 @@
 				<div class="col-12 col-md-6 text-center py-3 w-100 btn-color rounded-bottom-25" id="next">
 					<button type="button" class="btn fw-bold fs-3">Volgende</button>
 				</div>
-
 			</div>
 		</div>
 	</section>
