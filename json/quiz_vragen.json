@@ -448,5 +448,436 @@
             "Alle bovenstaande"
         ],
         "answer": "Alle bovenstaande"
+    },
+    
+    {
+        "question": "Wat doet 'let' in JavaScript?",
+        "choices": [
+            "Declareert een constante variabele",
+            "Declareert een block-scoped variabele",
+            "Declareert een globale variabele",
+            "Declareert een function-scoped variabele"
+        ],
+        "answer": "Declareert een block-scoped variabele"
+    },
+    {
+        "question": "Wat is het verschil tussen 'var' en 'let'?",
+        "choices": [
+            "'var' is function-scoped, 'let' is block-scoped",
+            "'var' is block-scoped, 'let' is function-scoped",
+            "Geen verschil",
+            "'let' kan niet opnieuw toegewezen worden"
+        ],
+        "answer": "'var' is function-scoped, 'let' is block-scoped"
+    },
+    {
+        "question": "Wat doet 'Array.prototype.reduce()'?",
+        "choices": [
+            "Voegt elementen toe aan een array",
+            "Verzamelt alle elementen in één enkele waarde",
+            "Filtert een array",
+            "Maakt een nieuwe array met elementen"
+        ],
+        "answer": "Verzamelt alle elementen in één enkele waarde"
+    },
+    {
+        "question": "Wat is een 'promise' in JavaScript?",
+        "choices": [
+            "Een synchrone functie",
+            "Een object dat toekomstige waardes representeert",
+            "Een error-handler",
+            "Een event listener"
+        ],
+        "answer": "Een object dat toekomstige waardes representeert"
+    },
+    {
+        "question": "Hoe schrijf je een functie als arrow function met één parameter?",
+        "choices": [
+            "param => {}",
+            "(param) => {}",
+            "() => {}",
+            "function param() {}"
+        ],
+        "answer": "param => {}"
+    },
+    {
+        "question": "Wat doet 'JSON.stringify()'?",
+        "choices": [
+            "Zet JSON om naar een string",
+            "Zet een object om naar een JSON-string",
+            "Zet een string om naar JSON",
+            "Zet een JSON-string om naar een object"
+        ],
+        "answer": "Zet een object om naar een JSON-string"
+    },
+    {
+        "question": "Wat is een closure?",
+        "choices": [
+            "Een functie die toegang heeft tot variabelen van een buitenliggende functie",
+            "Een fout in de code",
+            "Een type variabele",
+            "Een object dat een functie bevat"
+        ],
+        "answer": "Een functie die toegang heeft tot variabelen van een buitenliggende functie"
+    },
+    {
+        "question": "Wat doet 'async/await'?",
+        "choices": [
+            "Maakt synchrone code asynchroon",
+            "Houdt code synchroon",
+            "Vervangt callbacks voor asynchrone code",
+            "Maakt functies traag"
+        ],
+        "answer": "Vervangt callbacks voor asynchrone code"
+    },
+    {
+        "question": "Wat is event bubbling?",
+        "choices": [
+            "Een event dat begint bij de target en omhoog gaat in de DOM-tree",
+            "Een event dat niet wordt doorgegeven",
+            "Een manier om events te stoppen",
+            "Een type error"
+        ],
+        "answer": "Een event dat begint bij de target en omhoog gaat in de DOM-tree"
+    },
+    {
+        "question": "Wat doet 'Object.freeze()'?",
+        "choices": [
+            "Maakt een object onveranderlijk",
+            "Verwijdert een object",
+            "Kopieert een object",
+            "Voegt een object toe"
+        ],
+        "answer": "Maakt een object onveranderlijk"
+    },
+    {
+        "question": "Wat geeft 'typeof null' terug?",
+        "choices": [
+            "'null'",
+            "'object'",
+            "'undefined'",
+            "'NaN'"
+        ],
+        "answer": "'object'"
+    },
+    {
+        "question": "Wat is de output van '0.1 + 0.2 === 0.3'?",
+        "choices": [
+            "true",
+            "false",
+            "undefined",
+            "Error"
+        ],
+        "answer": "false"
+    },
+    {
+        "question": "Hoe kun je een property toevoegen aan een object?",
+        "choices": [
+            "object.property = waarde",
+            "object->property = waarde",
+            "object[property] = waarde",
+            "Beide a en c"
+        ],
+        "answer": "Beide a en c"
+    },
+    {
+        "question": "Wat doet 'Array.prototype.map()'?",
+        "choices": [
+            "Verwijdert elementen",
+            "Maakt een nieuwe array met de resultaten van een functie",
+            "Filtert elementen",
+            "Verandert de originele array"
+        ],
+        "answer": "Maakt een nieuwe array met de resultaten van een functie"
+    },
+    {
+        "question": "Wat is het nut van 'use strict'?",
+        "choices": [
+            "Verbetert browsercompatibiliteit",
+            "Voorkomt het gebruik van onveilige syntax",
+            "Verhoogt performance",
+            "Maakt code leesbaarder"
+        ],
+        "answer": "Voorkomt het gebruik van onveilige syntax"
+    },
+    {
+        "question": "Hoe wordt een fout opgevangen in een try-catch blok?",
+        "choices": [
+            "try { ... } catch(error) { ... }",
+            "try { ... } error { ... }",
+            "try-catch { ... }",
+            "try() { ... } catch() { ... }"
+        ],
+        "answer": "try { ... } catch(error) { ... }"
+    },
+    {
+        "question": "Wat doet 'Array.prototype.filter()'?",
+        "choices": [
+            "Maakt een nieuwe array met elementen die voldoen aan een conditie",
+            "Verwijdert alle elementen",
+            "Maakt een kopie van de array",
+            "Verandert de originele array"
+        ],
+        "answer": "Maakt een nieuwe array met elementen die voldoen aan een conditie"
+    },
+    {
+        "question": "Wat is het verschil tussen == en ===?",
+        "choices": [
+            "Geen verschil",
+            "=== vergelijkt waarde en type, == alleen waarde",
+            "== vergelijkt waarde en type, === alleen waarde",
+            "== is strikter"
+        ],
+        "answer": "=== vergelijkt waarde en type, == alleen waarde"
+    },
+    {
+        "question": "Wat doet 'setTimeout()'?",
+        "choices": [
+            "Voert een functie uit na een bepaalde tijd",
+            "Voert een functie direct uit",
+            "Herhaalt een functie",
+            "Stop een functie"
+        ],
+        "answer": "Voert een functie uit na een bepaalde tijd"
+    },
+    {
+        "question": "Hoe maak je een nieuw object aan via een constructorfunctie?",
+        "choices": [
+            "let obj = new Constructor();",
+            "let obj = Constructor();",
+            "let obj = Object();",
+            "let obj = {}"
+        ],
+        "answer": "let obj = new Constructor();"
+    },
+    {
+        "question": "Wat is het doel van 'this' in JavaScript?",
+        "choices": [
+            "Verwijst naar het huidige object",
+            "Verwijst naar de functie",
+            "Verwijst naar de globale variabele",
+            "Verwijst naar een string"
+        ],
+        "answer": "Verwijst naar het huidige object"
+    },
+    {
+        "question": "Wat doet 'document.querySelector()'?",
+        "choices": [
+            "Selecteert het eerste element dat overeenkomt met een CSS-selector",
+            "Selecteert alle elementen met een bepaalde class",
+            "Verwijdert een element",
+            "Voegt een event listener toe"
+        ],
+        "answer": "Selecteert het eerste element dat overeenkomt met een CSS-selector"
+    },
+    {
+        "question": "Wat is de output van 'typeof NaN'?",
+        "choices": [
+            "'number'",
+            "'NaN'",
+            "'object'",
+            "'undefined'"
+        ],
+        "answer": "'number'"
+    },
+    {
+        "question": "Wat doet 'Function.prototype.bind()'?",
+        "choices": [
+            "Maakt een nieuwe functie met een gebonden this-waarde",
+            "Voert een functie direct uit",
+            "Verwijdert een functie",
+            "Maakt een promise"
+        ],
+        "answer": "Maakt een nieuwe functie met een gebonden this-waarde"
+    },
+    {
+        "question": "Hoe definieer je een default parameter in een functie?",
+        "choices": [
+            "function f(x = 5) {}",
+            "function f(default x) {}",
+            "function f(x) = 5 {}",
+            "function f(x ?= 5) {}"
+        ],
+        "answer": "function f(x = 5) {}"
+    },
+    {
+        "question": "Wat is het verschil tussen een functie-declaratie en een functie-expressie?",
+        "choices": [
+            "Functie-declaraties worden gehoisted, expressies niet",
+            "Expressies worden gehoisted, declaraties niet",
+            "Geen verschil",
+            "Declaraties zijn anoniem"
+        ],
+        "answer": "Functie-declaraties worden gehoisted, expressies niet"
+    },
+    {
+        "question": "Wat doet de spread operator '...' in JavaScript?",
+        "choices": [
+            "Splitst een array in losse elementen",
+            "Verwijdert elementen uit een array",
+            "Maakt een nieuwe array",
+            "Concateneert strings"
+        ],
+        "answer": "Splitst een array in losse elementen"
+    },
+    {
+        "question": "Wat doet 'Promise.all()'?",
+        "choices": [
+            "Wacht tot alle promises zijn afgerond",
+            "Wacht tot de eerste promise is afgerond",
+            "Maakt een nieuwe promise",
+            "Annuleert promises"
+        ],
+        "answer": "Wacht tot alle promises zijn afgerond"
+    },
+    {
+        "question": "Wat is het resultaat van '[] + []'?",
+        "choices": [
+            "'' (lege string)",
+            "[] (lege array)",
+            "null",
+            "0"
+        ],
+        "answer": "'' (lege string)"
+    },
+    {
+        "question": "Wat doet 'Array.prototype.find()'?",
+        "choices": [
+            "Zoekt het eerste element dat voldoet aan een conditie",
+            "Filtert alle elementen",
+            "Maakt een nieuwe array",
+            "Verwijdert elementen"
+        ],
+        "answer": "Zoekt het eerste element dat voldoet aan een conditie"
+    },
+    {
+        "question": "Wat is een IIFE (Immediately Invoked Function Expression)?",
+        "choices": [
+            "Een functie die direct wordt uitgevoerd na definitie",
+            "Een error in code",
+            "Een object",
+            "Een asynchrone functie"
+        ],
+        "answer": "Een functie die direct wordt uitgevoerd na definitie"
+    },
+    {
+        "question": "Wat doet 'typeof undefined'?",
+        "choices": [
+            "'undefined'",
+            "'null'",
+            "'object'",
+            "'NaN'"
+        ],
+        "answer": "'undefined'"
+    },
+    {
+        "question": "Wat is het verschil tussen een 'for...in' en een 'for...of' loop?",
+        "choices": [
+            "'for...in' loopt over keys, 'for...of' over waarden",
+            "'for...in' loopt over waarden, 'for...of' over keys",
+            "Geen verschil",
+            "Beide werken alleen met arrays"
+        ],
+        "answer": "'for...in' loopt over keys, 'for...of' over waarden"
+    },
+    {
+        "question": "Wat doet 'delete object.property'?",
+        "choices": [
+            "Verwijdert een property uit een object",
+            "Verwijdert een object",
+            "Maakt een property leeg",
+            "Maakt een property readonly"
+        ],
+        "answer": "Verwijdert een property uit een object"
+    },
+    {
+        "question": "Wat is hoisting in JavaScript?",
+        "choices": [
+            "Variabele- en functieverklaringen worden naar boven verplaatst",
+            "Variabelen worden verwijderd",
+            "Functies worden omgezet naar strings",
+            "Een type error"
+        ],
+        "answer": "Variabele- en functieverklaringen worden naar boven verplaatst"
+    },
+    {
+        "question": "Wat doet 'Array.prototype.push()'?",
+        "choices": [
+            "Voegt één of meerdere elementen toe aan het einde van een array",
+            "Verwijdert het laatste element van een array",
+            "Voegt een element toe aan het begin van een array",
+            "Maakt een nieuwe array"
+        ],
+        "answer": "Voegt één of meerdere elementen toe aan het einde van een array"
+    },
+    {
+        "question": "Wat is een prototype in JavaScript?",
+        "choices": [
+            "Een object waar andere objecten eigenschappen van erven",
+            "Een functie",
+            "Een type variabele",
+            "Een string"
+        ],
+        "answer": "Een object waar andere objecten eigenschappen van erven"
+    },
+    {
+        "question": "Hoe maak je een object met methoden in JavaScript?",
+        "choices": [
+            "let obj = { methode() { ... } }",
+            "let obj = function() { ... }",
+            "let obj = new Object()",
+            "let obj = []"
+        ],
+        "answer": "let obj = { methode() { ... } }"
+    },
+    {
+        "question": "Wat doet 'Array.prototype.forEach()'?",
+        "choices": [
+            "Voert een functie uit voor elk element, zonder een nieuwe array te maken",
+            "Maakt een nieuwe array",
+            "Filtert elementen",
+            "Zoekt een element"
+        ],
+        "answer": "Voert een functie uit voor elk element, zonder een nieuwe array te maken"
+    },
+    {
+        "question": "Wat is het resultaat van 'typeof function(){}'?",
+        "choices": [
+            "'function'",
+            "'object'",
+            "'undefined'",
+            "'string'"
+        ],
+        "answer": "'function'"
+    },
+    {
+        "question": "Wat doet 'parseInt(\"10px\")'?",
+        "choices": [
+            "Geeft 10 terug",
+            "Geeft NaN terug",
+            "Geeft '10px' terug",
+            "Geeft 0 terug"
+        ],
+        "answer": "Geeft 10 terug"
+    },
+    {
+        "question": "Wat is een event listener in JavaScript?",
+        "choices": [
+            "Een functie die reageert op een event",
+            "Een variabele",
+            "Een object",
+            "Een type error"
+        ],
+        "answer": "Een functie die reageert op een event"
+    },
+    {
+        "question": "Wat doet 'Array.prototype.slice()'?",
+        "choices": [
+            "Maakt een kopie van een deel van een array",
+            "Verwijdert elementen uit een array",
+            "Wijzigt een array",
+            "Voegt elementen toe"
+        ],
+        "answer": "Maakt een kopie van een deel van een array"
     }
 ]

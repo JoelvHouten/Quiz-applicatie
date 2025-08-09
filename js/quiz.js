@@ -7,7 +7,6 @@ document.getElementById("start").addEventListener("click", () => {
     document.getElementById("results").style.display = "none";
     document.getElementById("quiz").style.display = "block";
 
-    questions = questions.slice(0, questionAmount); 
     showQuestion();
 });
 
@@ -31,7 +30,7 @@ fetch('json/quiz_vragen.json')
     .then (response => response.json())
     .then (data => {
         // Willekeurig laden van vragen en als alles goed gaat de eerste vraag laten zien
-        questions = shuffleArray(data);
+        questions = shuffleArray(data).slice(0, questionAmount);
     })
     .catch(error => {
         // Wanneer het laden van het JSON bestand mislukt een foutmelding laten zien
@@ -39,9 +38,13 @@ fetch('json/quiz_vragen.json')
         console.error('Fout bij laden van JSON:', error);
     });
 
-// Functie voor het willekeurig laden van een vraag
+// Functie voor het willekeurig laden van een vraag -- ChatGpt voor betere randomize op de vragen
 function shuffleArray(array) {
-    return array.sort(() => Math.random() - 0.5);
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
 // Functie voor het tonen van de vraag en antwoorden en het kiezen van het antwoord

@@ -121,3 +121,7 @@ h1{
     box-shadow: none;
     border-color: inherit;
 }
+
+.list-group-item + .list-group-item.active{
+    margin-top: 0 !important;
+}
